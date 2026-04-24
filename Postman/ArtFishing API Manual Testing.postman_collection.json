@@ -1,0 +1,450 @@
+{
+  "info": {
+    "_postman_id": "4df83067-d01f-486b-9c3a-ba836835ec1b",
+    "name": "ArtFishing API Manual Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54233170",
+    "_collection_link": "https://go.postman.co/collection/54233170-4df83067-d01f-486b-9c3a-ba836835ec1b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET MAIN PAGE",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://artfishing.club/",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Wrong Page 404",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 404\", function () {\r",
+              "    pm.response.to.have.status(404);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://artfishing.club/12345",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            "12345"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Blog Page",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://artfishing.club/all_blog/",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            "all_blog",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Price Page",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://artfishing.club/stoimost/",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            "stoimost",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Article Page",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://artfishing.club/kak-poymat-zimnego-golavlya/",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            "kak-poymat-zimnego-golavlya",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET WP API",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://artfishing.club/wp-json/",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            "wp-json",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Posts API",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://artfishing.club/wp-json/wp/v2/posts",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            "wp-json",
+            "wp",
+            "v2",
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Article by Slug",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://artfishing.club/wp-json/wp/v2/posts?slug=kak-poymat-zimnego-golavlya",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            "wp-json",
+            "wp",
+            "v2",
+            "posts"
+          ],
+          "query": [
+            {
+              "key": "slug",
+              "value": "kak-poymat-zimnego-golavlya"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Feedback Form",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "your-name",
+              "value": "Aleks",
+              "type": "text"
+            },
+            {
+              "key": "your-email",
+              "value": "olimpija_80@mail.ru",
+              "type": "text",
+              "uuid": "38ff239d-4287-44ad-96b3-636b12367663"
+            },
+            {
+              "key": "your-subject",
+              "value": "Good day",
+              "type": "text",
+              "uuid": "ed285fc5-e92c-4807-b02a-112c0e3d8201"
+            },
+            {
+              "key": "your-message",
+              "value": "Privet kak dela",
+              "type": "text"
+            },
+            {
+              "key": "_wpcf7",
+              "value": "1319",
+              "type": "text"
+            },
+            {
+              "key": "_wpcf7_unit_tag",
+              "value": "wpcf7-f1319-p1320-o1",
+              "type": "text",
+              "uuid": "505d8de3-e392-4693-acef-ebce4c4c406f"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://artfishing.club/wp-json/contact-form-7/v1/contact-forms/1319/feedback",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            "wp-json",
+            "contact-form-7",
+            "v1",
+            "contact-forms",
+            "1319",
+            "feedback"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Feedback Form exist/not exist",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "your-name",
+              "value": "Aleks",
+              "type": "text"
+            },
+            {
+              "key": "your-email",
+              "value": "test",
+              "type": "text"
+            },
+            {
+              "key": "your-subject",
+              "value": "Good day",
+              "type": "text"
+            },
+            {
+              "key": "your-message",
+              "value": "Privet kak dela",
+              "type": "text"
+            },
+            {
+              "key": "_wpcf7",
+              "value": "1319",
+              "type": "text"
+            },
+            {
+              "key": "_wpcf7_unit_tag",
+              "value": "wpcf7-f1319-p1320-o1",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://artfishing.club/wp-json/contact-form-7/v1/contact-forms/1319/feedback",
+          "protocol": "https",
+          "host": [
+            "artfishing",
+            "club"
+          ],
+          "path": [
+            "wp-json",
+            "contact-form-7",
+            "v1",
+            "contact-forms",
+            "1319",
+            "feedback"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
