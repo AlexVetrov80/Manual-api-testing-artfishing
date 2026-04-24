@@ -81,7 +81,7 @@ _wpcf7_unit_tag:wpcf7-f1319-p1320-o1
 
 ## 📸 Test Execution Example
 
-![Run Results](screenshots/run_results.png)
+![Run Results](Screenshots/run_results.png)
 
 ---
 
